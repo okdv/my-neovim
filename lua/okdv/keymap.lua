@@ -52,6 +52,7 @@ key_mapper("n", "<A-k>", "<Esc>:m .-2<CR>==gi")
 -- Insert --
 -- Press jk fast to exit insert mode 
 key_mapper("i", "jk", "<ESC>")
+key_mapper("i", "kj", "<ESC>")
 
 -- Visual --
 -- Stay in indent mode
@@ -70,3 +71,6 @@ key_mapper("x", "K", ":move '<-2<CR>gv-gv")
 key_mapper("x", "<A-j>", ":move '>+1<CR>gv-gv")
 key_mapper("x", "<A-k>", ":move '<-2<CR>gv-gv")
 
+-- Terminal --
+key_mapper("t", "jk", "<C-\\><C-n>")
+key_mapper("t", "kj", "<C-\\><C-n>")
